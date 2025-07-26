@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First HTML Page</title>
+</head>
+<body>
+  <h1>Welcome to HTML!</h1>
+  <p>This is my first web page using HTML structure.</p>
+  
+  <h2>About Me</h2>
+  <p>I am learning how to structure a web page using HTML tags and elements.</p>
+  
+  <ul>
+    <li>I learned about the <strong>head</strong> and <strong>body</strong> sections.</li>
+    <li>I used <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;ul&gt;</code> tags.</li>
+  </ul>
+</body>
+</html>
