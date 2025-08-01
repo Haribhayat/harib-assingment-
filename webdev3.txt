@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Links tables and list in html</title></head>
+    <body>
+        <!--Activity01-->
+        <h1>Link in HTML</h1>
+        <a href="http://www.google.com">visit google</a>
+        <!--Activity02-->
+        <h1>Tables in html</h1>
+        <table border="5" bgcolour="aqua">
+            <tr>
+                <td>Firstname</td>
+                <td>Last name</td>
+                <td>Email</td>
+                <td>Adress</td>
+            </tr>
+            <tr>
+                <td>harib</td>
+                <td>hayat</td>
+                <td>harryhayat@gmail.com</td>
+                <td>Islamabad, Pakistan</td>
+            </tr>
+            <tr>
+                <td>usman</td>
+                <td>khalid</td>
+                <td>usman12@gmail.com</td>
+                <td>Islamabad, Pakistan</td>
+            </tr>
+        </table>
+            <h1>Lists in html</h1>
+            <o1>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </o1>
+             <ul>
+                 <li>5</li>
+                 <li>4</li>
+                 <li>3</li>
+                 <li>2</li>
+             </u1>
+             <dl>
+                 <dt>HTML</dt>
+                 <ddl>Hyper text markup language</ddl>
+                 <dt>CSS</dt>
+                 <ddl></ddl>
+             </dl>
+            </body>
+            <html></html>
+            
+             
