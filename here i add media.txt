@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media on Webpage</title>
+</head>
+<body>
+    <header>
+        <h1>My Media Webpage</h1>
+        <p>Here we display different forms of media using HTML.</p>
+    </header>
+
+    <section>
+        <h2>Image</h2>
+        <img src="image.jpg" alt="Beautiful Landscape" width="400">
+    </section>
+
+    <section>
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <section>
+        <h2>Video</h2>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <section>
+        <h2>Embedded Map</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509644!2d144.95592331531672!3d-37.81720997975148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f0f0d9b5%3A0x5045675218cee40!2sMelbourne!5e0!3m2!1sen!2sau!4v1615944675486!5m2!1sen!2sau" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Media Page</p>
+    </footer>
+</body>
+</html>
