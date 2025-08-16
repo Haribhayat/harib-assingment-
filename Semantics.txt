@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Semantic HTML Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My School Website</h1>
+    <p>Welcome to our official webpage</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Admissions</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <h2>About Our School</h2>
+    <p>Our school provides quality education with experienced teachers, modern facilities, and a focus on both academics and extracurricular activities.</p>
+  </section>
+
+  <section>
+    <h2>News & Updates</h2>
+    <p>Admissions for the new academic year are now open. Apply today to secure your child’s future.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My School. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
