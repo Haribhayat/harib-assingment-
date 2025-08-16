@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Properties Example</title>
+  <style>
+    /* CSS styling starts here */
+    body {
+      background-color: lightblue; /* property = background-color, value = lightblue */
+      font-family: Arial, sans-serif; /* property = font-family, value = Arial */
+    }
+
+    h1 {
+      color: darkblue;        /* property = color, value = darkblue */
+      text-align: center;     /* property = text-align, value = center */
+    }
+
+    p {
+      font-size: 18px;        /* property = font-size, value = 18px */
+      color: darkgreen;       /* property = color, value = darkgreen */
+      line-height: 1.6;       /* property = line-height, value = 1.6 */
+    }
+
+    .highlight {
+      background-color: yellow; /* property = background-color, value = yellow */
+      font-weight: bold;        /* property = font-weight, value = bold */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Introduction to CSS Properties</h1>
+  <p>This is a simple example to understand <span class="highlight">CSS properties</span> and values.</p>
+  <p>You can change colors, text, backgrounds, spacing, and much more using CSS.</p>
+
+</body>
+</html>
