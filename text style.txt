@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Styling Example</title>
+  <style>
+    h1 {
+      color: darkblue;
+      font-family: Arial, sans-serif;
+      font-size: 40px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p.intro {
+      color: green;
+      font-size: 20px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    p.decorated {
+      color: crimson;
+      font-size: 18px;
+      text-decoration: underline overline;
+      letter-spacing: 3px;
+    }
+
+    p.spaced {
+      color: brown;
+      font-size: 18px;
+      word-spacing: 10px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Text Styling in CSS</h1>
+
+  <p class="intro">
+    This is an example paragraph showing how to use text color, font size, line height, and text alignment.
+  </p>
+
+  <p class="decorated">
+    This paragraph has underline, overline, and extra letter spacing applied.
+  </p>
+
+  <p class="spaced">
+    CSS allows you to control word spacing and make text more readable.
+  </p>
+
+</body>
+</html>
