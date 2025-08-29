@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Classes in CSS</title>
+  <style>
+    /* Change color of link when hovered */
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+
+    /* After link is visited */
+    a:visited {
+      color: purple;
+    }
+
+    /* Highlight input when focused */
+    input:focus {
+      border: 2px solid blue;
+      background-color: #f0f8ff;
+    }
+
+    /* First child of list */
+    li:first-child {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Last child of list */
+    li:last-child {
+      color: orange;
+      font-style: italic;
+    }
+
+    /* Every even child in list */
+    li:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Button hover effect */
+    button:hover {
+      background-color: black;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Pseudo Classes Example</h1>
+
+  <p>Here is a link: <a href="https://www.example.com">Visit Example</a></p>
+
+  <form>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" placeholder="Type here...">
+    <br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h2>List Example</h2>
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+    <li>Last Item</li>
+  </ul>
+</body>
+</html>
