@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Box Model Example</title>
+  <style>
+    .box {
+      width: 250px;           /* Content width */
+      height: 150px;          /* Content height */
+      background-color: lightblue; 
+      padding: 20px;          /* Space inside border */
+      border: 5px solid navy; /* Border around the box */
+      margin: 30px;           /* Space outside the box */
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model Example</h1>
+  <div class="box">
+    This is a box.  
+    <br>It has:
+    <ul>
+      <li>Margin</li>
+      <li>Border</li>
+      <li>Padding</li>
+      <li>Content</li>
+    </ul>
+  </div>
+
+</body>
+</html>
