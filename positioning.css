@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Example</title>
+  <style>
+    .box {
+      width: 120px;
+      height: 120px;
+      color: white;
+      text-align: center;
+      line-height: 120px;
+      font-weight: bold;
+    }
+
+    .static {
+      background: teal;
+      position: static; /* Default positioning */
+    }
+
+    .relative {
+      background: crimson;
+      position: relative; /* Moved 30px from left and top */
+      top: 30px;
+      left: 30px;
+    }
+
+    .absolute {
+      background: royalblue;
+      position: absolute; /* Positioned relative to the nearest positioned ancestor */
+      top: 10px;
+      right: 10px;
+    }
+
+    .fixed {
+      background: darkorange;
+      position: fixed; /* Stays in same place even when page scrolls */
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .sticky {
+      background: forestgreen;
+      position: sticky; /* Sticks to top when scrolling */
+      top: 0;
+    }
+
+    .container {
+      border: 2px solid black;
+      height: 400px;
+      margin: 50px;
+      position: relative; /* So absolute element is placed inside this box */
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Positioning Example</h2>
+  
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+
+  <div class="container">
+    <div class="box absolute">Absolute</div>
+    <div class="box sticky">Sticky</div>
+    <p>Scroll inside this container to see sticky in action.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae.</p>
+  </div>
+
+  <div class="box fixed">Fixed</div>
+</body>
+</html>
