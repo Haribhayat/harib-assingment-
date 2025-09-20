@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Pagination Styles</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom Style 1: Rounded */
+    .pagination-rounded .page-link {
+      border-radius: 50% !important;
+      margin: 0 5px;
+    }
+
+    /* Custom Style 2: Filled Background */
+    .pagination-filled .page-link {
+      background: #0d6efd;
+      color: white;
+      margin: 0 3px;
+      border: none;
+    }
+    .pagination-filled .page-link:hover {
+      background: #084298;
+    }
+
+    /* Custom Style 3: Underlined */
+    .pagination-underline .page-link {
+      border: none;
+      color: #0d6efd;
+      margin: 0 5px;
+      font-weight: bold;
+    }
+    .pagination-underline .page-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="p-5">
+
+  <h2 class="mb-3">Default Bootstrap Pagination</h2>
+  <nav>
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="mt-5 mb-3">Rounded Pagination</h2>
+  <nav>
+    <ul class="pagination pagination-rounded">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="mt-5 mb-3">Filled Pagination</h2>
+  <nav>
+    <ul class="pagination pagination-filled">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+    </ul>
+  </nav>
+
+  <h2 class="mt-5 mb-3">Underline Pagination</h2>
+  <nav>
+    <ul class="pagination pagination-underline">
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item active"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
