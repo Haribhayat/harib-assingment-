@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication with Functions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f9;
+    }
+    .box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      width: 80%;
+      padding: 8px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 10px 15px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Multiplication</h2>
+    <input type="number" id="num1" placeholder="Enter first number"><br>
+    <input type="number" id="num2" placeholder="Enter second number"><br>
+    <button onclick="showResult()">Multiply</button>
+
+    <div class="result" id="output">Result: </div>
+  </div>
+
+  <script>
+    // Function with parameters
+    function multiply(a, b) {
+      return a * b; // returns product
+    }
+
+    // Function to get input values and display result
+    function showResult() {
+      let n1 = parseFloat(document.getElementById("num1").value);
+      let n2 = parseFloat(document.getElementById("num2").value);
+
+      let result = multiply(n1, n2);  // calling function with parameters
+
+      document.getElementById("output").innerText = "Result: " + result;
+    }
+  </script>
+</body>
+</html>
