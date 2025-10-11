@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objects in Array Project</title>
+</head>
+<body>
+  <h2>Objects in Array Example</h2>
+  <p id="output"></p>
+
+  <script>
+    // Create an array of objects
+    let students = [
+      { name: "Ali", age: 18, grade: "A" },
+      { name: "Sara", age: 17, grade: "B" },
+      { name: "Hamza", age: 19, grade: "A+" }
+    ];
+
+    // Display values using object keys
+    document.write("<h3>Display using Object Keys:</h3>");
+    document.write(students[0].name + " - " + students[0].grade + "<br>");
+    document.write(students[1].name + " - " + students[1].grade + "<br>");
+    document.write(students[2].name + " - " + students[2].grade + "<br><br>");
+
+    // Display using array index
+    document.write("<h3>Display using Array Index:</h3>");
+    document.write("First student: " + students[0].name + "<br>");
+    document.write("Second student: " + students[1].name + "<br>");
+    document.write("Third student: " + students[2].name + "<br><br>");
+
+    // Convert the array into string using join()
+    let joinedArray = students.map(s => s.name).join(", ");
+    document.write("<h3>Using join() function:</h3>");
+    document.write("All students: " + joinedArray + "<br><br>");
+
+    // Remove the last element using pop()
+    let removedStudent = students.pop();
+    document.write("<h3>Using pop() function:</h3>");
+    document.write("Removed student: " + removedStudent.name + "<br>");
+    document.write("Remaining students: " + students.map(s => s.name).join(", "));
+  </script>
+</body>
+</html>
