@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Objects and Arrays Example</title>
+</head>
+<body>
+  <h2>JavaScript Objects and Arrays Example</h2>
+
+  <script>
+    // Step 1: Create an array of objects
+    let students = [
+      { name: "Ali", age: 18, grade: "A" },
+      { name: "Sara", age: 17, grade: "B" },
+      { name: "Ahmed", age: 19, grade: "A+" }
+    ];
+
+    // Step 2: Display using object keys
+    document.write("<h3>Display Using Object Keys:</h3>");
+    document.write("Name: " + students[0].name + "<br>");
+    document.write("Age: " + students[0].age + "<br>");
+    document.write("Grade: " + students[0].grade + "<br><br>");
+
+    // Step 3: Display using array index
+    document.write("<h3>Display Using Array Index:</h3>");
+    document.write("Second student name: " + students[1].name + "<br><br>");
+
+    // Step 4: Display whole array before pop
+    document.write("<h3>All Students (Before pop):</h3>");
+    document.write(JSON.stringify(students) + "<br><br>");
+
+    // Step 5: Use pop() function to remove last object
+    students.pop();
+
+    // Step 6: Display whole array after pop
+    document.write("<h3>All Students (After pop):</h3>");
+    document.write(JSON.stringify(students));
+  </script>
+</body>
+</html>
