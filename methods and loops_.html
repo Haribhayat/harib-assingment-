@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Numbers and Date Project</title>
+</head>
+<body>
+  <h2>Random Numbers, Current Date, and Rounded Number</h2>
+  <div id="output"></div>
+
+  <script>
+    let output = "";
+
+    // Print a set of random numbers using a while loop
+    let i = 0;
+    output += "<b>Random Numbers:</b><br>";
+    while (i < 5) { // prints 5 random numbers
+      let randomNum = Math.floor(Math.random() * 100); // random number 0–99
+      output += randomNum + "<br>";
+      i++;
+    }
+
+    // Print the current date using Date() object
+    let currentDate = new Date();
+    output += "<br><b>Current Date:</b> " + currentDate.toDateString() + "<br>";
+
+    // Print a random rounded number using built-in methods
+    let randomDecimal = Math.random() * 10; // random number 0–10
+    let roundedNumber = Math.round(randomDecimal);
+    output += "<br><b>Random Rounded Number:</b> " + roundedNumber;
+
+    document.getElementById("output").innerHTML = output;
+  </script>
+</body>
+</html>
