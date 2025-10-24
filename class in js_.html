@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Class, Static Method & Inheritance Project</title>
+</head>
+<body>
+  <h2>Class with Static Method and Inheritance</h2>
+  <div id="output"></div>
+
+  <script>
+    // Parent class
+    class Person {
+      constructor(name, age) {
+        this.name = name;
+        this.age = age;
+      }
+
+      // Method to display properties
+      displayInfo() {
+        return `Name: ${this.name} <br> Age: ${this.age}`;
+      }
+
+      // Static method
+      static greet() {
+        return "Hello! Welcome to the inheritance example.";
+      }
+    }
+
+    // Child class inheriting Person
+    class Student extends Person {
+      constructor(name, age, grade) {
+        super(name, age); // call parent constructor
+        this.grade = grade;
+      }
+
+      // Method to display student details
+      displayStudent() {
+        return `${this.displayInfo()} <br> Grade: ${this.grade}`;
+      }
+    }
+
+    // Access static method (called without object)
+    let greeting = Person.greet();
+
+    // Create an object of child class
+    let student1 = new Student("Ali", 18, "A+");
+
+    // Display all information
+    let output = `
+      <b>${greeting}</b><br><br>
+      <b>Student Details:</b><br>
+      ${student1.displayStudent()}
+    `;
+
+    document.getElementById("output").innerHTML = output;
+  </script>
+</body>
+</html>
