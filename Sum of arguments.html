@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sum and Trigonometric Values</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f2f2f2;
-      color: #333;
-      margin-top: 50px;
-    }
-    h1 {
-      color: #0066cc;
-    }
-    .box {
-      background-color: white;
-      width: 50%;
-      margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-  </style>
+  <title>Sum of Arguments & Trigonometric Values</title>
 </head>
 <body>
+  <h2>Sum of Arguments and Trigonometric Values</h2>
+  <div id="output"></div>
 
-  <h1>Sum and Trigonometric Values Project</h1>
+  <script>
+    // Function to find sum of arguments
+    function findSum(a, b, c) {
+      return a + b + c;
+    }
 
-  <div class="box">
-    <h3>Sum of Arguments</h3>
-    <p>10 + 20 + 30 + 40 + 50 = <strong>150</strong></p>
+    let sumResult = findSum(5, 10, 15);
 
-    <h3>Trigonometric Values (for 45°)</h3>
-    <p>sin(45°) = 0.7071</p>
-    <p>cos(45°) = 0.7071</p>
-    <p>tan(45°) = 1</p>
-  </div>
+    // Convert degree to radians
+    function toRadians(degree) {
+      return degree * (Math.PI / 180);
+    }
 
+    // Example angle in degrees
+    let angle = 45;
+    let radian = toRadians(angle);
+
+    // Trigonometric values using built-in Math methods
+    let sine = Math.sin(radian);
+    let cosine = Math.cos(radian);
+    let tangent = Math.tan(radian);
+
+    // Display all results
+    let output = `
+      <b>Sum of Arguments (5, 10, 15):</b> ${sumResult} <br><br>
+      <b>Angle:</b> ${angle}° <br>
+      <b>Sin(${angle}°):</b> ${sine.toFixed(4)} <br>
+      <b>Cos(${angle}°):</b> ${cosine.toFixed(4)} <br>
+      <b>Tan(${angle}°):</b> ${tangent.toFixed(4)}
+    `;
+
+    document.getElementById("output").innerHTML = output;
+  </script>
 </body>
 </html>
-
